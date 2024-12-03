@@ -18,7 +18,6 @@ class Currency(str, Enum):
     EUR = "EUR"
 
 
-# Command: validate
 @app.command()
 def validate(file: str = typer.Argument(..., help="Path to the fixed-width file.")):
     """
@@ -27,10 +26,6 @@ def validate(file: str = typer.Argument(..., help="Path to the fixed-width file.
     if not os.path.exists(file):
         raise FileNotFoundError("The specified file does not exist.")
     validate_file(file)
-
-
-# Command: add
-from typing import Literal
 
 
 @app.command()
@@ -48,7 +43,6 @@ def add(
     typer.echo("Transaction added successfully.")
 
 
-# Command: set
 @app.command(name="set")
 def set_field_value(
     file: str = typer.Argument(..., help="Path to the fixed-width file."),

@@ -1,0 +1,43 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest cache
+.pytest_cache/
+
+# Virtual environment
+env/
+
+# Log files
+app.log
+
+# HTML coverage reports
+htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Python-specific files
+*.egg-info/
+dist/
+build/
+
+# Exclude test data files if you don't want to commit them
+*.txt
+!example.txt
+!edge_case_file.txt
+
+# Ignore any environment-specific configurations
+.env
+
+.coverage
+*.txt
